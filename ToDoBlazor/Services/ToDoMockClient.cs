@@ -11,6 +11,12 @@ namespace ToDoBlazor.Services
             this.httpClient = httpClient;
         }
 
+        public override bool Equals(object? obj)
+        {
+            return obj is ToDoMockClient client &&
+                   EqualityComparer<HttpClient>.Default.Equals(httpClient, client.httpClient);
+        }
+
         public async Task<IEnumerable<Item>> GetAsync()
         {
             return new List<Item>()
