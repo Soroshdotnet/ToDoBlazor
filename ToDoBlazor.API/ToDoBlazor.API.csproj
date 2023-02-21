@@ -21,4 +21,8 @@
     <ProjectReference Include="..\ToDoBlazor.Shared\ToDoBlazor.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="obj\" />
+  </ItemGroup>
+
 </Project>
