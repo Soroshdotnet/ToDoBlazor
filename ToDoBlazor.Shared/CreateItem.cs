@@ -10,7 +10,7 @@ namespace ToDoBlazor.Shared.Entities
     public class CreateItem
     {
         [Required]
-        [StringLength(100, MinimumLength = 1)]
+        [StringLength(30, MinimumLength = 3)]
         public string Text { get; set; } = string.Empty;
     }
 }
