@@ -5,7 +5,7 @@ using ToDoBlazor.Services;
 
 namespace ToDoBlazor
 {
-    public class Program
+    public class Program 
     {
         public static async Task Main(string[] args)
         {
